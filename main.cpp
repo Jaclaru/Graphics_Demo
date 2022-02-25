@@ -31,7 +31,7 @@ Eigen::Vector3d smoeTool::Rotate(const Eigen::Vector3d& point, const Eigen::Vect
     Eigen::Matrix3d m_m;
     m_m << 1.0, 0.0, -base_point[0], 0.0, 1.0,-base_point[1], 0.0,0.0,1.0;
     Eigen::Matrix3d m_m_1;
-    m_m << 1.0, 0.0, base_point[0], 0.0, 1.0,base_point[1], 0.0,0.0,1.0;
+    m_m_1 << 1.0, 0.0, base_point[0], 0.0, 1.0,base_point[1], 0.0,0.0,1.0;
 
     Eigen::Vector3d calculate;
     calculate = r_m * m_m * point;
