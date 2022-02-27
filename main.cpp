@@ -1,4 +1,5 @@
 #include "AllClass.h"
+#include <opencv2/opencv.hpp>
 
 void smoeTool::Rotate(Eigen::Vector3d& point, double angle)
 {
