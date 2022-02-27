@@ -4,9 +4,10 @@
 
 #include <algorithm>
 #include "rasterizer.hpp"
-#include <opencv2/opencv.hpp>
-#include <math.h>
+#include <cmath>
 #include <stdexcept>
+
+//#define HAVE_OPENCV_CALIB3D
 
 
 rst::pos_buf_id rst::rasterizer::load_positions(const std::vector<Eigen::Vector3f> &positions)

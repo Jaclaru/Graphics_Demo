@@ -19,3 +19,5 @@ target_link_libraries(General ${OpenCV_LIBRARIES})
 
 add_executable(Demo main.cpp)
 target_link_libraries(Demo General)
+target_link_libraries(Demo ${OpenCV_LIBRARIES})
+

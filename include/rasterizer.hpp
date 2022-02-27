@@ -5,8 +5,7 @@
 #pragma once
 
 #include "Triangle.hpp"
-#include <algorithm>
-#include <Eigen>
+
 using namespace Eigen;
 
 namespace rst {
@@ -47,7 +46,7 @@ struct ind_buf_id
     int ind_id = 0;
 };
 
-class rasterizer
+class __declspec(dllexport) rasterizer
 {
   public:
     rasterizer(int w, int h);

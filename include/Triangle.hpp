@@ -8,7 +8,7 @@
 #include <Eigen>
 
 using namespace Eigen;
-class Triangle
+class __declspec(dllexport) Triangle
 {
   public:
     Vector3f v[3]; /*the original coordinates of the triangle, v0, v1, v2 in
