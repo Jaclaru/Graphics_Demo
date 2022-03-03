@@ -16,6 +16,6 @@
 * 解决程序中视图问题，完善旋转矩阵get_model_matrix和透视投影变换矩阵get_projection_matrix
 * 答案参考Branch First_Example
 
-### 常用图形算法:
+## 常用图形算法:
 
 * 布雷森汉姆直线算法
