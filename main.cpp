@@ -29,8 +29,8 @@ Eigen::Matrix4f get_model_matrix(float rotation_angle)
     float cosine = cos(rotation_angle);
     float sine = sin(rotation_angle);
 
-    model<<cosine, sine, 0.0f, 0.0f,
-            -sine, cosine, 0.0f, 0.0f,
+    model<<cosine, -sine, 0.0f, 0.0f,
+            sine, cosine, 0.0f, 0.0f,
             0.0f, 0.0f, 1.0f, 0.0f,
             0.0f, 0.0f, 0.0f, 1.0f;
 
@@ -47,6 +47,8 @@ Eigen::Matrix4f get_projection_matrix(float eye_fov, float aspect_ratio,
     // TODO: Implement this function
     // Create the projection matrix for the given parameters.
     // Then return it.
+    zNear = -zNear;
+    zFar = -zFar;
 
     float n_abs = fabs(zNear);
     float top = n_abs * tan(rotation_angle / 2.0f);
