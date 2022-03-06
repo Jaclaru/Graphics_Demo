@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.16)
 project(Graphics_Demo)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CONFIGURATION_TYPES DEBUG)
 set(OpenCV_DIR ${CMAKE_CURRENT_SOURCE_DIR}/OpenCV3/x64/vc17/lib)
 find_package(OpenCV)
